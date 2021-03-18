@@ -1,0 +1,81 @@
+/* GENERAL SETTINGS */
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.ttf');
+}
+
+body {
+  background-color: #fff;
+  color: #3f3f3f;
+  font: 14px / 28px;
+  font-family: 'Raleway', arial;
+}
+
+h1 {
+  font-size: 52px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+/* GRID SETTINGS */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* HOME SETTINGS */
+
+header .logo {
+  margin-right: auto;
+}
+
+header .logo img {
+  display: block;
+  height: 70px;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  padding: 27px 17px;
+  display: block;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #333;
+  transition: all 0.5s ease;
+}
+
+.menu li:hover a {
+  background-color: #500d16;
+  color: white;
+}
+
+/* MAIN SECTION*/
+
+#mainSlider {
+  height: 660px;
+  background: url('../img/mainHome.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.slider {
+  width: 100%;
+}
+
+#mainCaption {
+  height: 660px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
