@@ -108,6 +108,7 @@ header .logo img {
   justify-content: center;
 }
 .col3 {
+  flex-grow: 1;
   width: 33.33%;
   margin: 1em;
 }
@@ -165,4 +166,204 @@ header .logo img {
   text-align: center;
   padding: 5px;
   transition: 0.5s ease;
+}
+
+/*PARALLAX SECTION*/
+
+#parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/plane2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+  position: relative;
+}
+.parallaxTop {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+/*ENGINE SECTION*/
+#engine {
+  margin: 8em 0;
+}
+.col2 {
+  flex-grow: 1;
+  width: 50%;
+  padding: 1em;
+}
+.engineContainer {
+  position: relative;
+}
+.engineContainer img {
+  width: 100%;
+}
+.engineOverlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* right: 0;*/
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(80, 13, 22, 0.7);
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.engineOverlay2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* right: 0;*/
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(80, 13, 22, 0.7);
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.engineContainer:hover .engineOverlay1,
+.engineContainer:hover .engineOverlay2 {
+  width: 100%;
+}
+.engineText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  white-space: nowrap;
+}
+
+/*FOOTER SECTION*/
+
+#footer {
+  background-color: #500d16;
+  padding: 3em 0;
+}
+.footerItem {
+  color: #95a5a6;
+  text-align: center;
+}
+.footerItem h3 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.footerItem p {
+  line-height: 1.5;
+}
+
+.socialLinks li {
+  display: inline;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.socialLinks li a {
+  color: #95a5a6;
+
+  transition: 0.3s ease;
+}
+
+.socialLinks li a:hover {
+  color: #fff;
+}
+.footerLinks li a {
+  text-decoration: none;
+  color: #95a5a6;
+  line-height: 2;
+  transition: 0.3s ease;
+}
+
+.footerLinks li a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+/*PlANES PAGE*/
+
+/*Slider section*/
+
+#planesSlider {
+  height: 300px;
+  background: url("../img/plane3.jpg") center center no-repeat;
+  background-size: cover;
+}
+#planesCaption {
+  height: 300px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*inspect section*/
+
+#inspect {
+  margin: 5em 0;
+  background-color: #f5f5f5;
+}
+.inspectTop {
+  margin: auto;
+}
+
+.inspectBody .col2 {
+  display: flex;
+  margin-top: 2em;
+}
+.inspectBody .container {
+  width: 100%;
+}
+.inspectImage {
+  width: 40%;
+}
+.inspectImage img {
+  width: 100%;
+}
+.inspectText {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  line-height: 1.5;
+}
+.date {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.inspectText h4 {
+  color: #500d16;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.inspectText p {
+  margin-bottom: 10px;
+}
+.inspectText a {
+  text-align: right;
+  text-decoration: none;
+  color: #500d16;
+}
+/*projectX section*/
+
+#project {
+  margin: 5em 0;
+}
+.projectTop {
+  margin: auto;
+}
+
+.projectBody {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/engine2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+.containerFluid {
+  display: flex;
 }
