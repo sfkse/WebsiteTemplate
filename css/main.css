@@ -470,7 +470,20 @@ header .logo img {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: #500d16; */
+  background-color: #500d16;
+  transition: 0.3s ease;
+}
+
+.teamTitle {
+  color: #fff;
+  font-size: 24px;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.teamMember:hover .teamMemberOverlay,
+.teamMember:hover .teamTitle {
+  display: none;
 }
 .teamMemberInfo {
   transition: 0.3s ease;
@@ -481,8 +494,13 @@ header .logo img {
 .teamMemberInfo {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #500d16;
+  padding: 1em;
+  line-height: 1.5;
+  color: #fff;
+  font-size: 24px;
 }
 .teamMember:hover .teamMemberInfo {
   position: absolute;
